@@ -1,0 +1,236 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 6050 3600
+NoConn ~ 6050 3300
+$Comp
+L power:VCC #PWR?
+U 1 1 5D27DFF9
+P 5200 2800
+F 0 "#PWR?" H 5200 2650 50  0001 C CNN
+F 1 "VCC" H 5217 2973 50  0000 C CNN
+F 2 "" H 5200 2800 50  0001 C CNN
+F 3 "" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 3100
+$Comp
+L Device:Battery BT1
+U 1 1 5D28582B
+P 2300 3250
+F 0 "BT1" H 2408 3296 50  0000 L CNN
+F 1 "4.5v Battery" H 2408 3205 50  0000 L CNN
+F 2 "" V 2300 3310 50  0001 C CNN
+F 3 "~" V 2300 3310 50  0001 C CNN
+	1    2300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D286777
+P 2300 3050
+F 0 "#PWR?" H 2300 2900 50  0001 C CNN
+F 1 "VCC" H 2317 3223 50  0000 C CNN
+F 2 "" H 2300 3050 50  0001 C CNN
+F 3 "" H 2300 3050 50  0001 C CNN
+	1    2300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D287018
+P 2300 3450
+F 0 "#PWR?" H 2300 3200 50  0001 C CNN
+F 1 "GND" H 2305 3277 50  0000 C CNN
+F 2 "" H 2300 3450 50  0001 C CNN
+F 3 "" H 2300 3450 50  0001 C CNN
+	1    2300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D288160
+P 3200 3200
+F 0 "C1" H 3315 3246 50  0000 L CNN
+F 1 "0.1uF" H 3315 3155 50  0000 L CNN
+F 2 "" H 3238 3050 50  0001 C CNN
+F 3 "~" H 3200 3200 50  0001 C CNN
+	1    3200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2893F7
+P 3200 3350
+F 0 "#PWR?" H 3200 3100 50  0001 C CNN
+F 1 "GND" H 3205 3177 50  0000 C CNN
+F 2 "" H 3200 3350 50  0001 C CNN
+F 3 "" H 3200 3350 50  0001 C CNN
+	1    3200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D289AB5
+P 3200 3050
+F 0 "#PWR?" H 3200 2900 50  0001 C CNN
+F 1 "VCC" H 3217 3223 50  0000 C CNN
+F 2 "" H 3200 3050 50  0001 C CNN
+F 3 "" H 3200 3050 50  0001 C CNN
+	1    3200 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 3200 2    50   Input ~ 0
+D1
+Text GLabel 6000 3400 2    50   Input ~ 0
+A3
+Text GLabel 6000 3500 2    50   Input ~ 0
+D4
+Wire Wire Line
+	6000 3200 5800 3200
+Wire Wire Line
+	6000 3400 5800 3400
+Wire Wire Line
+	5800 3500 6000 3500
+Wire Wire Line
+	6050 3600 5800 3600
+Wire Wire Line
+	6050 3300 5800 3300
+Wire Wire Line
+	6050 3100 5800 3100
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U1
+U 1 1 5D277FA1
+P 5200 3400
+F 0 "U1" H 4671 3446 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 4671 3355 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5200 3400 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 5200 3400 50  0001 C CNN
+	1    5200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D27DB75
+P 5200 4000
+F 0 "#PWR?" H 5200 3750 50  0001 C CNN
+F 1 "GND" H 5205 3827 50  0000 C CNN
+F 2 "" H 5200 4000 50  0001 C CNN
+F 3 "" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5D2A6831
+P 7200 2700
+F 0 "J1" H 7280 2692 50  0000 L CNN
+F 1 "Serial Monitor" H 7280 2601 50  0000 L CNN
+F 2 "" H 7200 2700 50  0001 C CNN
+F 3 "~" H 7200 2700 50  0001 C CNN
+	1    7200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2AADD0
+P 7000 2900
+F 0 "#PWR?" H 7000 2650 50  0001 C CNN
+F 1 "GND" H 7005 2727 50  0000 C CNN
+F 2 "" H 7000 2900 50  0001 C CNN
+F 3 "" H 7000 2900 50  0001 C CNN
+	1    7000 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6800 3650 0    50   Input ~ 0
+A3
+Wire Wire Line
+	6800 3650 7000 3650
+Text GLabel 6800 2700 0    50   Input ~ 0
+D4
+Wire Wire Line
+	6800 2700 7000 2700
+$Comp
+L Device:Speaker_Crystal SG1
+U 1 1 5D2A4440
+P 7100 4700
+F 0 "SG1" H 7275 4696 50  0000 L CNN
+F 1 "Piezo Speaker" H 7275 4605 50  0000 L CNN
+F 2 "" H 7065 4650 50  0001 C CNN
+F 3 "~" H 7065 4650 50  0001 C CNN
+	1    7100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2A4F84
+P 6800 4950
+F 0 "#PWR?" H 6800 4700 50  0001 C CNN
+F 1 "GND" H 6805 4777 50  0000 C CNN
+F 2 "" H 6800 4950 50  0001 C CNN
+F 3 "" H 6800 4950 50  0001 C CNN
+	1    6800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4950 6800 4800
+Wire Wire Line
+	6800 4800 6900 4800
+Text GLabel 6800 4700 0    50   Input ~ 0
+D1
+Wire Wire Line
+	6800 4700 6900 4700
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D2AF2D2
+P 6900 4000
+F 0 "R1" V 6695 4000 50  0000 C CNN
+F 1 "10kΩ" V 6786 4000 50  0000 C CNN
+F 2 "" H 6900 4000 50  0001 C CNN
+F 3 "~" H 6900 4000 50  0001 C CNN
+	1    6900 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D2A6FE1
+P 7200 3550
+F 0 "J2" H 7280 3542 50  0000 L CNN
+F 1 "Water Sensor" H 7280 3451 50  0000 L CNN
+F 2 "" H 7200 3550 50  0001 C CNN
+F 3 "~" H 7200 3550 50  0001 C CNN
+	1    7200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4000 7000 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5D27D224
+P 6800 4150
+F 0 "#PWR?" H 6800 3900 50  0001 C CNN
+F 1 "GND" H 6805 3977 50  0000 C CNN
+F 2 "" H 6800 4150 50  0001 C CNN
+F 3 "" H 6800 4150 50  0001 C CNN
+	1    6800 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 3650
+Wire Wire Line
+	6800 4000 6800 4150
+Wire Wire Line
+	7000 2900 7000 2800
+$EndSCHEMATC
